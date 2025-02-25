@@ -6,6 +6,61 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -206,11 +261,11 @@
 	},
 	"sources": {
 		"contract/KhairanCoins.sol": {
-			"keccak256": "0x10254b4a16e3295a091a1fd94de793ccb64520f59e48f50aa889ea084fecb074",
+			"keccak256": "0x7cc33cddfe3163801151e8b4a6049998fadef854bb3e7619db045b175d4d3e66",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d12c8eb35fc2f6047e262136a35a39adbee7e8b94220d98c6c1eb1937e9e395a",
-				"dweb:/ipfs/QmXWYmaZ8zDQyQQPGDX8UBGVaAP9YaFgzi8EzaYgsHXygq"
+				"bzz-raw://9178e138069b2d766d03f4bfd0123183c10026ef9ab4147bdf9969b9db2874bc",
+				"dweb:/ipfs/QmYF9N7y6qQvHVQDkZDLB2dSM31BmLftXaNDLsqHEDKsk4"
 			]
 		}
 	},
