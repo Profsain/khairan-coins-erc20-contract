@@ -2,35 +2,43 @@
 pragma solidity 0.8.28;
 
 contract KhairanCoins {
-    function name() public pure returns (string memory) { 
+    string NAME = "Khairan Coins";
+    string SYMBOL = "KRC";
+
+    mapping(address => uint) balances;
+
+    function name() public view returns (string memory) { 
         // coins name
-        return 'Khairan Coins';
+        return NAME;
     }
 
     // coins official symbol
-    function symbol() public pure returns (string memory) {
-        return '$KRC';
+    function symbol() public view returns (string memory) {
+        return SYMBOL;
     }
 
     // coins decimals
     function decimals() public pure returns (uint8) {
-        return 0;
+        return 8;
     }
 
     // get total $KRC total supply
     function totalSupply() public pure returns (uint256) { 
         // amount of coins in existence
-        return 1000000000;
+        return 10000000;
     }
 
     // get coins owners balance
     function balanceOf(address _owner) public  view returns (uint256 balance) {
-
+        return balances[_owner];
     }
 
     // transfer coins to another users
     function tranfer(address _to, uint256 _value) public  returns (bool success) {
-
+        assert(balances[msg.sender] > _value);
+        balances[msg.sender] = balances[msg.sender] - _value;
+        balances[_to] = balances[_to] + _value;
+        return true;
     }
 
     // transfer from an address to another

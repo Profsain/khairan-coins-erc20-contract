@@ -95,7 +95,7 @@
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -108,7 +108,7 @@
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -206,11 +206,11 @@
 	},
 	"sources": {
 		"contract/KhairanCoins.sol": {
-			"keccak256": "0x7375f890a4afa97d925ac3a7bf4527f5426d956b28d1d6611702707c398e48cf",
+			"keccak256": "0x10254b4a16e3295a091a1fd94de793ccb64520f59e48f50aa889ea084fecb074",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://06b0296c8fdf4cb5b86a15b7a84636c2ee15aab91dd6b8d42558440a48248267",
-				"dweb:/ipfs/QmaMLJzj3NLcyDMrPZBzt7X21xEtDYxXKNTN7hBZmVNFQf"
+				"bzz-raw://d12c8eb35fc2f6047e262136a35a39adbee7e8b94220d98c6c1eb1937e9e395a",
+				"dweb:/ipfs/QmXWYmaZ8zDQyQQPGDX8UBGVaAP9YaFgzi8EzaYgsHXygq"
 			]
 		}
 	},
